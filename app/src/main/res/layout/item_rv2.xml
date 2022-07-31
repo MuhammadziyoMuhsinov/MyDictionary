@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F7F8FA"
+    android:orientation="vertical"
+    android:layout_height="@dimen/_66sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_64sdp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/_15sdp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laptop"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_3sdp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tarjima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noutbook, komputer yangicha elektron ..."
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginVertical="@dimen/_3sdp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/more"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#33272840"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+      />
+
+
+
+</LinearLayout>

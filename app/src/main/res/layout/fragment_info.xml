@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_20sdp"
+    tools:context=".InfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lap top"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_25sdp"
+            />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        >
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_210sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_laptop"/>
+
+        <LinearLayout
+            android:id="@+id/like_bosish"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/circle">
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/heart2"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingVertical="@dimen/_30sdp"
+        >
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lap top"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:text="Noutbuk, kompyuter, yangicha elektron hisoblash mashinasi"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

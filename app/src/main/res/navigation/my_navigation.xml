@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="uz.muhammadziyo.mydictionary.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_kategories"
+            app:destination="@id/kategories" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="uz.muhammadziyo.mydictionary.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/kategories"
+        android:name="uz.muhammadziyo.mydictionary.Kategories"
+        android:label="fragment_kategories"
+        tools:layout="@layout/fragment_kategories" >
+        <action
+            android:id="@+id/action_kategories_to_addwordFragment"
+            app:destination="@id/addwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addwordFragment"
+        android:name="uz.muhammadziyo.mydictionary.AddwordFragment"
+        android:label="fragment_addword"
+        tools:layout="@layout/fragment_addword" >
+        <action
+            android:id="@+id/action_addwordFragment_to_kategories"
+            app:destination="@id/kategories" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_pager"
+        android:name="uz.muhammadziyo.mydictionary.item_pager"
+        android:label="fragment_item_pager"
+        tools:layout="@layout/fragment_item_pager" />
+</navigation>
